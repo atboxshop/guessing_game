@@ -9,7 +9,7 @@ fn main()
 {
     println!("Guess the number!");
     let mut rng = thread_rng();
-    let secret_number = rng.gen_range(1..101);
+    let secret_number = rng.gen_range(1..=100);
     println!("The secret number is: {}", secret_number);
     loop {
         println!("Please input your guess.");
